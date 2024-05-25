@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Partial View demo</p>
+</div>
+@* <div>
+    @{
+    Html.RenderPartial("_TotalSales");
+    }
+</div>
+
+<div>
+    @{
+        Html.RenderPartial("_Report");
+    }
+</div> *@
+
+
+<div>
+    @Html.Partial("_TotalSales")
+</div>
+
+<div>
+    @Html.Partial("_Report")
+</div>
